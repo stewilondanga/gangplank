@@ -42,6 +42,48 @@ box-shadow: 0px 0px 58px 0px rgba(0,0,0,0.35);
 
 }
 
+.toolbar{
+  margin: 0px;
+  height: 38px;
+  padding: 10px;
+  border-top: 1px #d5d5d5 solid;
+}
+.toolbar button{
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color: #009cff;
+  cursor: pointer;
+  padding: 10px;
+}
+.toolbar button:focus{
+  outline: none;
+}
+.user-list{
+  max-width: 10em;
+background: rgb(251, 251, 251);
+background: -moz-linear-gradient(0deg, rgb(251, 251, 251) 85%, rgb(244, 244, 244) 100%);
+background: -webkit-linear-gradient(0deg, rgb(251, 251, 251) 85%, rgb(244, 244, 244) 100%);
+background: -o-linear-gradient(0deg, rgb(251, 251, 251) 85%, rgb(244, 244, 244) 100%);
+background: -ms-linear-gradient(0deg, rgb(251, 251, 251) 85%, rgb(244, 244, 244) 100%);
+background: linear-gradient(90deg, rgb(251, 251, 251) 85%, rgb(244, 244, 244) 100%);
+  border: 1px #d5d5d5 solid;
+  margin-right: 0px;
+  border-right: 0px;
+  -webkit-box-shadow: inset 0px -7px 26px 0px rgba(50, 50, 50, 0.05);
+    -moz-box-shadow:    inset 0px -7px 26px 0px rgba(50, 50, 50, 0.05);
+    box-shadow:         inset 0px -7px 26px 0px rgba(50, 50, 50, 0.05);
+}
+.user-list ul{
+    max-height: 267px;
+    min-height: 267px;
+    overflow: scroll;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    border-top: 1px #efefef solid;
+}
+
 
 
     h1 {
