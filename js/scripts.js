@@ -1,15 +1,17 @@
 var user = {
-  screen_name: 'maxmustermann'};
-function $(q){
+  screen_name: 'maxmustermann'
+};
+
+function $(q) {
   res = document.getElementById(q);
   return res;
 }
 
-function sendMessage(msg){
+function sendMessage(msg) {
   updateUI(msg);
 }
 
-function updateUI(data){
+function updateUI(data) {
   var wrap = document.createElement('li');
   wrap.className = "me";
   var title = document.createElement('b');
@@ -26,13 +28,13 @@ function updateUI(data){
   wrap.appendChild(title);
   wrap.appendChild(content);
   $('chat-list').appendChild(wrap);
-  $('text').value="";
+  $('text').value = "";
 }
 
-function onEnter(){
+function onEnter() {
   var txt = $('text').value;
   var msg = {
-    user: {
+    user:  {
       screen_name: 'Stewart ilondanga',
       avatar: 'http://diggwithme.files.wordpress.com/2012/09/new-default-twitter-avatar.jpg'
     },
@@ -44,7 +46,7 @@ function onEnter(){
 }
 var inp = $('text');
 inp.onkeydown = function(e) {
-    if (e.keyCode == 13){
-       onEnter();
-    }
+  if (e.keyCode == 13) {
+    onEnter();
+  }
 };
