@@ -29,7 +29,25 @@ function updateUI(data){
   $('text').value="";
 }
 
-
+function onEnter(){
+  var txt = $('text').value;
+  var msg = {
+    user: {
+      screen_name: 'Max Mustermann',
+      avatar: 'http://diggwithme.files.wordpress.com/2012/09/new-default-twitter-avatar.jpg'
+    },
+    text: txt
+  };
+  console.log(msg);
+  sendMessage(msg);
+  $('chat-list').scrollTo(0, $('chat-list').innerHeight);
+}
+var inp = $('text');
+inp.onkeydown = function(e) {
+    if (e.keyCode == 13){
+       onEnter();
+    }
+};
 
 var navigate = (function() {
 	$('.dd').toggle();
