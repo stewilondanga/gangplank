@@ -1,3 +1,11 @@
+var user = {
+  screen_name: 'maxmustermann'};
+function $(q){
+  res = document.getElementById(q);
+  return res;
+}
+
+
 var navigate = (function() {
 	$('.dd').toggle();
 	$('.dd_btn').click(function() {
