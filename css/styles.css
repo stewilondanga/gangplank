@@ -7,6 +7,21 @@ body {
   background: #083952;
 }
 
+.flex{
+  display: flex;
+}
+.info{
+  width: 20em;
+  border-radius: 10px;
+  padding: 10px;
+  border-top: 1px #fff solid;
+  border-bottom: 1px #d5d5d5 solid;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+
 
     h1 {
     	font-family: helvetica;
