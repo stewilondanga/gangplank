@@ -33,7 +33,7 @@ function onEnter(){
   var txt = $('text').value;
   var msg = {
     user: {
-      screen_name: 'Max Mustermann',
+      screen_name: 'Stewart ilondanga',
       avatar: 'http://diggwithme.files.wordpress.com/2012/09/new-default-twitter-avatar.jpg'
     },
     text: txt
