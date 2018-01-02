@@ -5,6 +5,11 @@ function $(q){
   return res;
 }
 
+function sendMessage(msg){
+  updateUI(msg);
+}
+
+
 
 var navigate = (function() {
 	$('.dd').toggle();
